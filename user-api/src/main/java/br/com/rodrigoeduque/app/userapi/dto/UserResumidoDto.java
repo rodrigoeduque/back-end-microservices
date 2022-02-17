@@ -2,9 +2,6 @@ package br.com.rodrigoeduque.app.userapi.dto;
 
 import br.com.rodrigoeduque.app.userapi.model.User;
 
-import java.time.LocalDate;
-import java.util.List;
-
 public class UserResumidoDto {
 
     private String nome;
