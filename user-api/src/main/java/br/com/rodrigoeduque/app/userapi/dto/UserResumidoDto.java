@@ -3,6 +3,7 @@ package br.com.rodrigoeduque.app.userapi.dto;
 import br.com.rodrigoeduque.app.userapi.model.User;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public class UserResumidoDto {
 
@@ -39,5 +40,9 @@ public class UserResumidoDto {
 
     private static UserResumidoDto convertToDto(User user) {
         return new UserResumidoDto(user.getNome(), user.getEmail(), user.getTelefone());
+    }
+
+    public User convertToModel() {
+        return new User(nome, email, telefone);
     }
 }
